@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<meta charset='UTF-8'>
+<meta http-equiv="refresh" content="0;/cgi-bin/index.py">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Телефонний довідник</title>
+<meta name="keywords" content='Телефонний довідник"'>
+<meta name="description" content='Телефонний довідник"'>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Denis" />
+<link rel="shortcut icon" href="../img/phone-book-th.png"> 
+<link rel="stylesheet" href="../css/main.css" type="text/css" charset="utf-8">
+</head>
+<body>
+<header>
+    <div class="hed" id="page-wrad">
+        <div class="hed-r">
+            <img src="../img/phone.png" alt="Телефонний довідник">
+        </div>	
+        <div class="hed-l">
+            <font>Телефонний довідник та дати народження</font>
+        </div>
+    </div>
+</header>
+<br>
+<div class="form" id="page-wrap">
+    <div>
+        <form action="../cgi-bin/index.py" accept-charset="utf-8">
+	        <input class="in-for" type="text" placeholder="Дані співробітника..." name="TEXT_1">
+	        <input class="sech-print" type="submit" value=" Пошук ">
+	        <output type="text" name="OUT">
+	    </form>
+    </div>
+</div>
+<div class="form" id="page-wrad">
+    <div>
+        <form action="../cgi-bin/index.py" accept-charset="utf-8">
+	        <input class="in-for" type="text" placeholder="Дати народження..." name="TEXT_2">
+	        <input class="sech-print" type="submit" value=" Пошук ">
+	        <output type="text" name="OUT">
+	    </form>
+    </div>
+</div>
+
+<div id="page-wrad"><h7>Для пошуку ведіть прізвище або ім'я або місяць нароження </h7></div>
+
+<br>
+
+<div id="page-wrad">
+ 
+<h2>Дані співробітника (телефони)</h2>
+
+<table class="table table-borderedt table-bordc table-hovert">
+      <thead>
+        <tr>
+          <th scope="col">Прізвище Ім'я По батькові</th>
+          <th scope="col">Підрозділ</th>          
+          <th scope="col">Посада</th>
+          <th scope="col">Каб.</th>
+          <th scope="col">Тел. внутр.</th>
+          <th scope="col">Тел. місцев.</th>
+          <th scope="col">Тел. моб. 1</th>
+          <th scope="col">Тел. моб. 2</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+  </table>  
+
+
+<br><h2>Дати народження, прийняття, звільнення</h2>
+
+<table class="table table-borderedt table-bordd table-hovert">
+      <thead>
+        <tr>
+          <th scope="col">Прізвище Ім'я По батькові</th>
+          <th scope="col">Посада</th>
+          <th scope="col">Дата народження</th>
+          <th scope="col">З якого часу працює</th>
+          <th scope="col">До якого часу працював</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+  </table>  
+
+<br><br>
+<p style='text-align: center;'><span style='font-size: 10pt;'>Авторське право Denis © 2020. Всі права захищені.</span></p>
+
+</div>
+
+</body>
+</html>
