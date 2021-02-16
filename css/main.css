@@ -1,0 +1,217 @@
+*{
+	/* Universal CSS reset */
+	margin:0;
+	padding:0;
+}
+
+@font-face {
+	font-family: 'Times New Roman';
+	src: url('../fonts/times_new_roman.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/times_new_roman.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/times_new_roman.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/times_new_roman.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/times_new_roman.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/times_new_roman.svg#times_new_roman') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+body {
+	font-family: Times New Roman;
+/* Setting default text color, background and a font stack 
+	text-align: center;*/
+	padding: 0;
+	margin: 0;
+	/*min-width: 800px;*/
+	color: #004388;
+	background-color: #f6f6f6;
+	font-size: 14px/1.4 Times New Roman;
+	/*-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;*/
+}
+
+
+	#page-wrap {
+		margin: 10px;
+		float: left;
+	}
+	#page-wrad {
+		margin: 10px;
+	}
+
+
+
+.sech-print {
+	background: #007dff;
+	color:#fff;
+}
+.sech-print:hover { 
+	background: #004892;
+	color:#fff;
+}
+.sech-print:active {
+	background: #012d5a;
+	color:#fff;
+}
+
+.hed {
+    display: table;
+    width: 98%;
+}
+.hed-r {
+	margin-right:20;
+	margin-left:30;
+	float: left;
+}
+
+.hed-l {
+    font-family: Times New Roman;
+    font-size: 40pt;
+    padding: 5px;
+
+}
+
+.form {
+    display: table;
+    width: 48%;
+}
+.form > div {
+    display: table-cell;
+}
+.in-for {
+    width: 70%;
+}
+input {
+    font-family: Times New Roman;
+    font-size: 15pt;
+    padding: 5px;
+	border: 1px solid #555;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+	.table { 
+	display: fixed;
+		width: 100%; 
+		border-collapse: collapse;
+		font: 14px/1.4 Georgia, Serif;
+		padding: 0;
+		margin: 0;
+		color: #0D1216;
+		background-color: #83AFFC;
+		font-size: 14pt;
+		border-collapse: collapse;
+		border: 1px solid black;
+		
+	}
+
+
+/* Zebra users */
+
+	.table-borderedt a { 
+		font-weight: bold;
+	}
+	.table-borderedt thead th{
+		vertical-align: middle;
+		border: 1px solid black;
+	}
+	.table-borderedt tr:nth-of-type(odd) { 
+		background: #d9edf7; 
+	}
+	.table-borderedt tr:nth-of-type(even) { 
+		background: #fcf8e3; 
+	}
+	.table-hovert tbody tr:hover { 
+		background-color: #CCFFCC;
+	}	
+	.table-borderedt th { 
+		padding: 5px;
+		background: #f3ecff; 
+		text-align: center;
+	}
+	.table-borderedt td { 
+		padding: 5px; 
+		border: 1px solid black; 
+		text-align: left; 
+		vertical-align: middle;
+	}
+
+@media only screen 
+and (max-width: 992px),	(min-device-width: 992px) 
+and (max-device-width: 992px)  {
+body{
+	width: 99%;
+}
+.form{
+	display: block;
+	width: 95%;
+}
+form{
+	display: block;
+	width: 100%;
+}	
+.in-for {
+    width: 70%;
+}
+.hed-r {
+	margin-right:20;
+	margin-left:0;
+	float: left;
+}
+.hed-l {
+    font-size: 20pt;
+	padding: 10px;
+}
+	.table-borderedt table, .table-borderedt tbody, .table-borderedt thead, .table-borderedt th, .table-borderedt td, .table-borderedt tr {
+		display: block;
+	}
+	.table-borderedt { 
+		border: 2px solid black;
+	}
+	.table-borderedt thead tr {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	.table-borderedt tr {
+		border: 1px solid #333;
+	}
+	.table-borderedt thead {
+		border: 0px;
+	}	
+	.table-borderedt td {
+		border: none;
+		border-bottom: 1px solid #333;
+		position: relative;
+		padding-left: 50%;
+	}	
+	.table-borderedt td:before {
+		position: absolute;
+		top: 6px;
+		left: 6px;
+		width: 45%;
+		padding-right: 10px;
+		white-space: nowrap;
+	}
+	.table-borderedt td:after {
+		content: '\A0';
+	}
+	
+	.table-bordc td:nth-of-type(1):before { content: "ПІБ"; font-weight:bold; }
+	.table-bordc td:nth-of-type(2):before { content: "Підроздід"; font-weight:bold; }
+	.table-bordc td:nth-of-type(3):before { content: "Посада"; font-weight:bold; }
+	.table-bordc td:nth-of-type(4):before { content: "Кабінет"; font-weight:bold; }
+	.table-bordc td:nth-of-type(5):before { content: "Тел. внутр."; font-weight:bold; }
+	.table-bordc td:nth-of-type(6):before { content: "Тел. місцев."; font-weight:bold; }
+	.table-bordc td:nth-of-type(7):before { content: "Тел. моб. 1"; font-weight:bold; }
+	.table-bordc td:nth-of-type(8):before { content: "Тел. моб. 2"; font-weight:bold; }
+
+	.table-bordd td:nth-of-type(1):before { content: "ПІБ"; font-weight:bold; }
+	.table-bordd td:nth-of-type(2):before { content: "Посада"; font-weight:bold; }
+	.table-bordd td:nth-of-type(3):before { content: "Дата народження"; font-weight:bold; }
+	.table-bordd td:nth-of-type(4):before { content: "Прийнятя"; font-weight:bold; }
+	.table-bordd td:nth-of-type(5):before { content: "Звільнення"; font-weight:bold;}	
+}
+
